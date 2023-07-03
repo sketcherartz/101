@@ -1,0 +1,30 @@
+package Sınıf;
+
+import java.util.Scanner;
+
+public class varan2 {
+    public static void main(String[] args) {
+
+        double fiyat, kdvOrani, kdvliFiyat, kdvsizzFiyat, kdvTutar;
+
+            Scanner input = new Scanner(System.in);
+            System.out.print("Ürünün Fiyatını Giriniz:");
+            fiyat = input.nextDouble();
+
+            kdvOrani =(fiyat>1000) ? 0.8:0.18;
+            kdvTutar = fiyat*kdvOrani;
+            kdvliFiyat = fiyat + kdvTutar;
+
+        System.out.println("Ürünün Fİyatı:" + fiyat);
+        System.out.println("KDV Oranı:" + kdvOrani);
+        System.out.println("KDV Tutarı:" + kdvTutar);
+        System.out.println("Ürünün KDV'li Fiyatı:" + kdvliFiyat);
+
+
+
+
+
+
+    }
+
+}
