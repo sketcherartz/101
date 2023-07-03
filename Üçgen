@@ -1,0 +1,28 @@
+package Sınıf;
+
+import java.util.Scanner;
+
+public class varan3 {
+    public static void main(String[] args) {
+
+        double uzunKenar, kisaKenar, hipotenus, alan, cevre;
+
+        Scanner kenar = new Scanner(System.in);
+
+        System.out.print("Kısa Kenarı Yazınız:");
+        kisaKenar = kenar.nextDouble();
+
+        System.out.print("Uzun Kenarı Yazınız:");
+        uzunKenar = kenar.nextDouble();
+
+        double sonuc = (uzunKenar*uzunKenar+kisaKenar*kisaKenar);
+        hipotenus = Math.sqrt(sonuc);
+        System.out.println("Hipotenüs:" + hipotenus);
+
+        cevre = (kisaKenar+uzunKenar+hipotenus);
+        System.out.println("Çevre:" + cevre);
+        alan = ((kisaKenar*uzunKenar)/2);
+        System.out.println("Alan:"+ alan);
+
+    }
+}
