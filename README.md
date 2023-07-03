@@ -1,2 +1,2 @@
 # 101
-Yazılıma Ödevleri ve notları
+Yazılım Ödevleri ve notları
