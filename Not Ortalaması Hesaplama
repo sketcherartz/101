@@ -1,1 +1,40 @@
+public class varan1 {
+    public static void main(String[] args) {
 
+        int matematik, fizik, kimya, biyoloji, turkce, tarih, cografya;
+        Scanner not = new Scanner(System.in);
+
+        System.out.print("Matemetik Notunuz:  ");
+        matematik = not.nextInt();
+
+        System.out.print("Fizik Notunuz:  ");
+        fizik = not.nextInt();
+
+        System.out.print("Kimya Notunuz:  ");
+        kimya = not.nextInt();
+
+        System.out.print("Biyoloji Notunuz:  ");
+        biyoloji = not.nextInt();
+
+        System.out.print("Türkçe Notunuz:  ");
+        turkce = not.nextInt();
+
+        System.out.print("Tarih Notunuz:   ");
+        tarih = not.nextInt();
+
+        System.out.print("Coğrafya Notunuz:  ");
+        cografya = not.nextInt();
+
+        int toplam = (matematik+fizik+kimya+biyoloji+turkce+tarih+cografya);
+        double sonuc = toplam/7;
+
+        int b = 50;
+        boolean kosul1 = sonuc >= b;
+        boolean kosul2 = sonuc < b;
+
+        boolean sonuc2 = ((kosul1)||!(kosul2));
+
+        System.out.println("Ortalamanız:" +sonuc);
+
+        String str = (sonuc2) ? "Geçtiniz":"Kaldınız";
+        System.out.println(str);
