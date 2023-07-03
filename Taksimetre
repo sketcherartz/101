@@ -1,0 +1,17 @@
+package Sınıf;
+import java.util.Scanner;
+public class varan4 {
+    public static void main(String[] args) {
+
+        int a = 10;
+        double km, fiyat, tutar, mintutar;
+
+        Scanner yol = new Scanner(System.in);
+        System.out.print("Km Giriniz:");
+        km = yol.nextDouble();
+        System.out.println("Taksimetre Açılış Ücreti:" +a);
+        fiyat = 2.20;
+        System.out.println("Km Başına Fiyat:"+ fiyat);
+        tutar =  a+(km*fiyat);
+        mintutar = (tutar<20) ? 20:tutar;
+        System.out.print("Toplam:" + mintutar);
