@@ -1,0 +1,22 @@
+package Sınıf;
+import java.util.Scanner;
+public class varan5 {
+    public static void main(String[] args) {
+
+
+         double r, aci, pi = 3.14;
+
+         Scanner inp = new Scanner(System.in);
+
+         System.out.print("Dairenin Yarıçapını Giriniz: ");
+         r = inp.nextDouble();
+         System.out.print("Merkez Açıyı Giriniz: ");
+         aci = inp.nextDouble();
+
+         double alan = (pi*(r*r)*aci)/360;
+
+         System.out.println("Alan: "+ alan);
+
+
+    }
+}
