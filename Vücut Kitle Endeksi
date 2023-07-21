@@ -1,0 +1,21 @@
+package Sınıf;
+import java.util.Scanner;
+
+
+public class varan6 {
+    public static void main(String[] args) {
+
+        double boy, kilo;
+
+        Scanner inp = new Scanner(System.in);
+
+        System.out.print("Boyunuzu Metre Cinsinden Giriniz:");
+        boy = inp.nextDouble();
+        System.out.print("Kilonuzu Giriniz:");
+        kilo = inp.nextDouble();
+
+        double index = kilo/(boy*boy);
+        System.out.print("Vücut Kitle Endeksiniz:" + index);
+
+    }
+}
