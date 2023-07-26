@@ -1,0 +1,30 @@
+package Sınıf;
+import java.util.Scanner;
+public class varan7 {
+    public static void main(String[] args) {
+
+        double a = 2.14, e = 3.67, d = 1.11, m = 0.95, p = 5.00;
+        double armut, elma, domates, muz, patlican, toplam;
+
+        Scanner miktar = new Scanner(System.in);
+
+        System.out.print("Armut Kg?:");
+        armut = miktar.nextDouble();
+        System.out.print("Elma Kg?:");
+        elma = miktar.nextDouble();
+        System.out.print("Domates Kg?:");
+        domates = miktar.nextDouble();
+        System.out.print("Muz Kg?:");
+        muz = miktar.nextDouble();
+        System.out.print("Patlıcan Kg?:");
+        patlican = miktar.nextDouble();
+
+        toplam = (armut*a)+(elma*e)+(domates*d)+(muz*m)+(patlican*p);
+        System.out.print("Toplam Fiyat:" + toplam);
+
+
+
+
+
+    }
+}
