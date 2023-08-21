@@ -1,0 +1,33 @@
+package Sınıf;
+    import java.util.Scanner;
+
+public class varan8 {
+    public static void main(String[] args) {
+        int yas,kilo,yil,x = 2023;
+        double boy, index;
+    Scanner input = new Scanner(System.in);
+        System.out.print("Doğum yılınızı Giriniz:");
+            yil = input.nextInt();
+            yas = x-yil;
+
+        System.out.println("Yaşınız:" + yas);
+        System.out.print("Boyunuzu santimetre cinsinden giriniz:");
+            boy = input.nextDouble();
+
+        System.out.print("Kilonuzu giriniz:");
+            kilo = input.nextInt();
+            index = (kilo/((boy/100)*(boy/100)));
+
+        System.out.println("Vücut kitle endeksiniz:"+index);
+
+        if (yas >= 18){
+            if (index >= 23 && index <= 27){
+                System.out.println("Kan Verebilirsiniz");
+            }
+            else{
+                System.out.println("Kan Veremezsiniz");
+            }
+        }
+
+    }
+}
