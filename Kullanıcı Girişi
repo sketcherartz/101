@@ -1,0 +1,42 @@
+package Sınıf;
+import java.util.Scanner;
+public class varan10 {
+    public static void main(String[] args) {
+
+        String id, password, select, newpass, admin, adminpass;
+
+
+        Scanner input = new Scanner(System.in);
+//Kullanıcı adı ve şifre...
+
+        System.out.print("Kullanıcı Adınızı Giriniz:");
+        id = input.nextLine();
+        System.out.print("Şifrenizi Giriniz:");
+        password = input.nextLine();
+        /*Girilen bilgiler doğruysa "Başarıyla Giriş Yapıldı", eğer girilen bilgiler yanlışşa "Kullanıcı adı veya şifre hatalı uyarısıyla beraber "Şifre Değiştir" seçeneği*/
+
+        if (id.equals("admin") && password.equals("admin123")) {
+            System.out.println("Giriş Başarılı");
+        } else if (!(id.equals("admin") && !(password.equals("admin123")))) {
+            System.out.println("Kullanıcı Adı veya Şifre Hatalı");
+            System.out.println("Yeni Şifre Oluşturmak İçin 'E'a Basınız");
+            System.out.println();
+            select = input.nextLine();
+
+            if (select.equals("E")||select.equals("e")){
+                System.out.print("Yeni Şifrenizi Girin:");
+                newpass = input.nextLine();
+                if (!newpass.equals("admin123")) {
+                    System.out.println("Şifreniz Başarıyla Değiştirildi");
+                }
+                else {
+                    System.out.println("Yeni Şifre Eskisi İle Aynı Olamaz. Lütfen Yeniden Deneyin.");
+                }
+            }
+        }
+
+
+
+        }
+
+    }
