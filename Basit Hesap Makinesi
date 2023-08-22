@@ -1,0 +1,44 @@
+package Sınıf;
+import java.util.Scanner;
+public class varan9 {
+    public static void main(String[] args) {
+
+        int n1, n2, process;
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Lütfen ilk sayıyı giriniz:");
+        n1 = input.nextInt();
+
+        System.out.print("Lütfen diğer sayıyı giriniz:");
+        n2 = input.nextInt();
+
+        System.out.println("Lütfen yapmak istediğiniz işlemi seçiniz:");
+        System.out.println("1.Toplama");
+        System.out.println("2.Çıkarma");
+        System.out.println("3.Çarpma");
+        System.out.println("4.Bölme");
+        process = input.nextInt();
+
+        switch (process) {
+            case 1:
+                System.out.println("Sonuç :"+ (n1+n2));
+                break;
+            case 2:
+                System.out.println("Sonuç:"+(n1-n2));
+                break;
+            case 3:
+                System.out.println("Sonuç:"+(n1*n2));
+                break;
+            case 4:
+                System.out.println("Sonuç:"+(n1/n2));
+                break;
+            default:
+                System.out.println("Hatalı işlem yaptınız lütfen tekrar deneyin");
+
+
+
+        }
+
+
+        }
+    }
