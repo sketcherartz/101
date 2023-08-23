@@ -1,0 +1,69 @@
+package Sınıf;
+import java.util.Scanner;
+public class varan11 {
+    public static void main(String[] args) {
+
+       double mat,fizik,kimya,turkce,muzik,toplam = 0,toplamDers = 0,ort;
+       int gecme = 55;
+       Scanner input = new Scanner(System.in);
+
+       System.out.print("Matematik Notunuzu Giriniz:");
+       mat = input.nextDouble();
+            if (mat>=0 && mat<=100){
+                toplam +=mat;
+                ++toplamDers;
+            }
+            else {
+                System.out.println("Geçersiz Bir Not Girdiniz");
+            }
+       System.out.print("Fizik Notunuzu Giriniz:");
+       fizik = input.nextDouble();
+            if (fizik>=0 &&fizik<=100) {
+                toplam +=fizik;
+                ++toplamDers;
+            }
+            else{
+                System.out.print("Geçersiz Bir Not Girdiniz");
+            }
+       System.out.print("Kimya Notunuzu Giriniz:");
+       kimya = input.nextDouble();
+            if (kimya>=0 && kimya<=100) {
+                toplam +=kimya;
+                ++toplamDers;
+            }
+            else{
+                System.out.print("Geçersiz Bir Not Girdiniz");
+            }
+       System.out.print("Türkçe Notunuzu Giriniz:");
+       turkce = input.nextDouble();
+            if (turkce>=0 && turkce<=100){
+                toplam +=turkce;
+                ++toplamDers;
+            }
+            else{
+                System.out.print("Geçersiz Bir Not Girdiniz");
+            }
+       System.out.print("Müzik Notunuzu Giriniz:");
+       muzik = input.nextDouble();
+            if (muzik>=0 && muzik<=100){
+                toplam +=muzik;
+                ++toplamDers;
+            }
+            else{
+                System.out.print("Geçersiz Bir Not Girdiniz");
+            }
+       ort = (toplam/toplamDers);
+            if (ort>=gecme){
+                System.out.println("Ortalamanız:"+ort);
+                System.out.println("Geçtiniz");
+            }
+            else{
+                System.out.println("Ortalamanız:"+ort);
+                System.out.println("Kaldınız");
+            }
+
+
+
+
+    }
+}
