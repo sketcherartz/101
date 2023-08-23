@@ -1,0 +1,23 @@
+package Sınıf;
+import java.util.Scanner;
+public class varan12 {
+    public static void main(String[] args) {
+
+        int celcius;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Hava Sıcaklığını Giriniz:");
+        celcius = input.nextInt();
+
+        if (celcius<=5) {
+            System.out.println("Kayak Yapmaya Gidebilirsiniz");
+        } else if (celcius>=5 && celcius<=25) {
+            if (celcius<=15){
+                System.out.println("Sinemaya Gidebilirsiniz");}
+            if (celcius>=10){
+                System.out.println("Pikniğe Gidebilirsiniz");
+            }
+        } else{
+            System.out.println("Yüzmeye Gidebilirsiniz");
+        }
+    }
+}
