@@ -1,0 +1,57 @@
+package Sinif;
+import java.util.Scanner;
+public class varan15 {
+    public static void main(String[] args) {
+        int yas,tarife;
+        double total,off,km,price = 0.10;
+
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Km Giriniz:");
+        km = input.nextInt();
+        System.out.print("Yolcunun Yaşını Giriniz:");
+        yas = input.nextInt();
+        if (km<0||yas<0){
+            System.out.print("Hatalı Km veya Yaş Girdiniz");
+        }else{
+            System.out.println("Uçuşunuz Tek Yön İse Basınız:1");
+            System.out.println("Uçuşunuz Gidiş Geliş İse Basınız:2");
+            tarife = input.nextInt();
+            switch (tarife){
+                case 1:
+                    if (yas<12) {
+                        total = (km*price);
+                        System.out.print("Toplam Ücret:"+((total)-(total*0.5)));
+                    } else if (yas>=12&&yas<=24) {
+                        total = (km*price);
+                        System.out.print("Toplam Ücret:"+((total)-(total*0.1)));
+                    } else if (yas>65) {
+                        total = (km*price);
+                        System.out.print("Toplam Ücret:"+((total)-(total*0.3)));
+                    }else{
+                        total = (km*price);
+                        System.out.print("Toplam Ücret:"+total);
+                    }
+                break;
+
+                case 2:
+                    if (yas<12) {
+                        total = (2*km*price);
+                        System.out.print("Toplam Ücret:"+((total)-(total*0.5)-(total*0.2)));
+                    } else if (yas>=12&&yas<=24) {
+                        total = (2*km*price);
+                        System.out.print("Toplam Ücret:"+((total)-(total*0.1)-(total*0.2)));
+                    } else if (yas>65) {
+                        total = (2*km*price);
+                        System.out.print("Toplam Ücret:"+((total)-(total*0.3)-(total*0.2)));
+                    }else{
+                        total = (2*km*price);
+                        System.out.print("Toplam Ücret:"+((total)-(total*0.2)));
+                    }
+
+            }
+           }
+
+
+    }
+}
