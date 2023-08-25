@@ -1,0 +1,40 @@
+package Sinif;
+import java.util.Scanner;
+public class varan16 {
+    public static void main(String[] args) {
+        int yil;
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Doğum Yılınızı Giriniz:");
+        yil = input.nextInt();
+        if (yil>0){
+            if (yil%12==0) {
+                System.out.print("Çin Zodyağınız:MAYMUN");
+            } else if (yil%12==1) {
+                System.out.print("Çin Zodyağınız:HOROZ");
+            } else if (yil%12==2) {
+                System.out.print("Çin Zodyağınız:KÖPEK");
+            } else if (yil%12==3) {
+                System.out.print("Çin Zodyağınız:DOMUZ");
+            } else if (yil%12==4) {
+                System.out.print("Çin Zodyağınız:FARE");
+            } else if (yil%12==5) {
+                System.out.print("Çin Zodyağınız:ÖKÜZ");
+            } else if (yil%12==6) {
+                System.out.print("Çin Zodyağınız:KAPLAN");
+            } else if (yil%12==7) {
+                System.out.print("Çin Zodyağınız:TAVŞAN");
+            } else if (yil%12==8) {
+                System.out.print("Çin Zodyağınız:EJDERHA");
+            } else if (yil%12==9) {
+                System.out.print("Çin Zodyağınız:YILAN");
+            } else if (yil%12==10) {
+                System.out.print("Çin Zodyağınız:AT");
+            } else if (yil%12==11) {
+                System.out.print("Çin Zodyağınız:KOYUN");
+            }
+        }
+
+
+    }
+}
