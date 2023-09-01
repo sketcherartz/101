@@ -1,0 +1,19 @@
+package Sinif;
+import java.util.Scanner;
+public class varan19 {
+    public static void main(String[] args) {
+        int odd;
+        int total = 0;
+        Scanner number = new Scanner(System.in);
+
+        do {
+            System.out.print("Sayı Giriniz:");
+            odd = number.nextInt();
+            if (odd%2==0 && odd%4==0){
+                total += odd;
+            }
+        } while (!(odd%2==1));
+        
+        System.out.print("Toplam:"+total);
+    }
+}
