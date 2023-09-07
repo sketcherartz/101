@@ -1,0 +1,37 @@
+package Sinif;
+import java.util.Scanner;
+public class varan21 {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("n'i girin: ");
+        int n = scanner.nextInt();
+
+        System.out.print("r'i girin: ");
+        int r = scanner.nextInt();
+
+        int nFaktoriyel = 1;
+        int rFaktoriyel = 1;
+        int nMinusRFaktoriyel = 1;
+
+        int i = 1;
+
+        while (i <= n) {
+            nFaktoriyel *= i;
+            if (i <= r) {
+                rFaktoriyel *= i;
+            }
+            if (i <= (n - r)) {
+                nMinusRFaktoriyel *= i;
+            }
+            i++;
+        }
+
+        int kombinasyon = nFaktoriyel / (rFaktoriyel * nMinusRFaktoriyel);
+
+        System.out.println("C(" + n + ", " + r + ") = " + kombinasyon);
+    }
+}
+
+
